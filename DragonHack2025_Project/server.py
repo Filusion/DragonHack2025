@@ -4,10 +4,10 @@ import requests
 from twilio.rest import Client
 
 # === Twilio credentials ===
-account_sid = 'AC2975994e03052e14bb526ee8bd88a4c8'
-auth_token = '6fdab6ddcb708f5a5ff3d1cc3ca66b53'
-twilio_number = '+14322879902'
-target_number = '+38669738651'
+account_sid = ''
+auth_token = ''
+twilio_number = ''
+target_number = ''
 
 # === IPinfo token ===
 IPINFO_TOKEN = '36d59d4af58d46'

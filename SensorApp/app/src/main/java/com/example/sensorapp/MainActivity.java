@@ -195,6 +195,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         accTextView = findViewById(R.id.accTextView);
         gyroTextView = findViewById(R.id.gyroTextView);
+        accTextView.setVisibility(View.GONE);
+        gyroTextView.setVisibility(View.GONE);
+
         alertButton = findViewById(R.id.alertButton);
         alertButton.setVisibility(View.GONE);
 
@@ -279,7 +282,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         handler.postDelayed(() -> {
             if (waitingForResponse) {
-                sendToServer("Alert!");
+                sendToServer("fall");
                 alertButton.setVisibility(View.GONE);
                 stopSound();
                 waitingForResponse = false;
